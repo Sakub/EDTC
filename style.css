@@ -118,47 +118,60 @@ body {
         margin: 50px 0;
         text-align: center;
     }
+
     .header__text {
         font-size: 32px;
     }
+
     .wrapper__input {
         font-size: 18px;
         margin: 5px 0;
     }
+
     .secondBackgroundDecoration {
         display: none;
     }
+
     .backgroundDecoration__icon {
         font-size: 15rem;
     }
+
     .githubLink__icon {
         font-size: 3rem;
     }
+
     .wrapper__button {
         font-size: 22px;
     }
+
     .githubLink {
         right: 15px;
     }
+
     .backgroundDecoration {
         transform: rotate(15deg);
     }
 }
+
 @media (min-width: 768px) and (max-width:1024px) {
     .header__text {
         font-size: 72px;
         text-align: center;
     }
+
     .header {
         margin: 0;
         margin-top: 50px;
     }
+
     .wrapper__input {
         font-size: 48px;
     }
+
     .wrapper__button {
         font-size: 48px;
     }
+
     .githubLink__icon {
         font-size: 7rem;
     }
