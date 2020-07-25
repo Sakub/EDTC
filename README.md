@@ -4,7 +4,7 @@
 Webpage which shows you how long you will be downloading some file
 
 ## Demonstration
-![](https://imgur.com/6hHBLZ6)
+![](https://imgur.com/6hHBLZ6.png)
 
 ## Setup
 To run this project, simply clone repo and open `index.html` in your browser
