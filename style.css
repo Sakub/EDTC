@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #FCBF1A;
+    --secondary-color: #333030;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+}
+
+.header {
+    margin: 4rem 0 0 10rem;
+}
+
+.header__text {
+    color: #fff;
+    font-size: 62px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper__input {
+    background: var(--secondary-color);
+    font-size: 32px;
+    color: rgba(255, 255, 255, .51);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    appearance: none;
+    outline: none;
+    transition: border-color .3s ease-in-out;
+}
+
+.wrapper__input::-webkit-inner-spin-button,
+.wrapper__input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.wrapper__button {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--primary-color);
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 38px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+
+.backgroundDecoration__icon,
+.secondDecoration__icon {
+    color: var(--secondary-color);
+    opacity: .5;
+    font-size: 30rem;
+    z-index: 1;
+}
+
+.backgroundDecoration {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    transform: rotate(33deg);
+}
+
+.secondBackgroundDecoration {
+    position: absolute;
+    left: 5%;
+    bottom: 30%;
+    transform: rotate(-15deg);
+}
+
+.secondDecoration__icon {
+    font-size: 15rem;
+}
+
+.githubLink {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+}
+
+.githubLink__icon {
+    color: var(--secondary-color);
+    font-size: 5rem;
+    transition: color .3s ease-in-out;
+}
+
+.githubLink__icon:hover {
+    color: var(--primary-color);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .header {
+        margin: 50px 0;
+        text-align: center;
+    }
+    .header__text {
+        font-size: 32px;
+    }
+    .wrapper__input {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    .secondBackgroundDecoration {
+        display: none;
+    }
+    .backgroundDecoration__icon {
+        font-size: 15rem;
+    }
+    .githubLink__icon {
+        font-size: 3rem;
+    }
+    .wrapper__button {
+        font-size: 22px;
+    }
+    .githubLink {
+        right: 15px;
+    }
+    .backgroundDecoration {
+        transform: rotate(15deg);
+    }
+}
+@media (min-width: 768px) and (max-width:1024px) {
+    .header__text {
+        font-size: 72px;
+        text-align: center;
+    }
+    .header {
+        margin: 0;
+        margin-top: 50px;
+    }
+    .wrapper__input {
+        font-size: 48px;
+    }
+    .wrapper__button {
+        font-size: 48px;
+    }
+    .githubLink__icon {
+        font-size: 7rem;
+    }
+}

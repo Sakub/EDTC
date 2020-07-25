@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EDTC</title>
+</head>
+
+<body>
+    <header class="header">
+        <p class="header__text" id="header__text">CALCULATE ESTIMATED <br>DOWNLOAD TIME</p>
+    </header>
+    <span class="backgroundDecoration">
+        <i class="fas fa-calculator backgroundDecoration__icon"></i>
+    </span>
+    <span class="secondBackgroundDecoration">
+        <i class="fas fa-calculator secondDecoration__icon"></i>
+    </span>
+    <div class="wrapper">
+        <form action="#">
+            <div class="wrapper__inputsWrapper">
+                <input type="number" class="wrapper__input" id="input__size" placeholder="File size (MB)" required>
+                <input type="number" class="wrapper__input" id="input__speed" placeholder="Download speed (MB/s)"
+                    required>
+            </div>
+            <button class="wrapper__button" id="submitBtn">CALCULATE</button>
+        </form>
+    </div>
+    <a href="https://github.com/Sakub/EDTC" class="githubLink" target="blank">
+        <i class="fab fa-github githubLink__icon"></i>
+    </a>
+
+    <script src="https://kit.fontawesome.com/f8d8f86635.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
