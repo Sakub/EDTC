@@ -113,6 +113,13 @@ body {
     color: var(--primary-color);
 }
 
+.wrapper__estimatedTime {
+    display: none;
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
     .header {
         margin: 50px 0;
